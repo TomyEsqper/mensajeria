@@ -1,0 +1,127 @@
+:root {
+  --ink: #1c1915;
+  --muted: #6b645b;
+  --paper: #f4efe6;
+  --card: #fffaf3;
+  --line: #d9d0c3;
+  --accent: #b4532a;
+  --ok: #2f6b4f;
+  --err: #9f2d2d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at top, #fff8ee, transparent 55%),
+    var(--paper);
+  color: var(--ink);
+}
+
+.card {
+  width: min(440px, 100%);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 36px 32px;
+  box-shadow: 0 18px 40px rgba(60, 42, 20, 0.08);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.lead {
+  margin: 0 0 28px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+form {
+  display: grid;
+}
+
+label {
+  margin-bottom: 6px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  margin-bottom: 16px;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #e8c4ae;
+  border-color: var(--accent);
+}
+
+button {
+  margin-top: 8px;
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 18px;
+  background: var(--ink);
+  color: #fffaf3;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: var(--accent);
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.estado {
+  min-height: 1.4em;
+  margin: 14px 0 0;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+}
+
+.estado.ok {
+  color: var(--ok);
+}
+
+.estado.err {
+  color: var(--err);
+}
