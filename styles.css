@@ -84,6 +84,11 @@ textarea {
   min-height: 140px;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: #b3aaa0;
+}
+
 input:focus,
 textarea:focus {
   outline: 2px solid #e8c4ae;

@@ -1,8 +1,0 @@
-{
-  "name": "correos",
-  "private": true,
-  "type": "module",
-  "dependencies": {
-    "resend": "^6.4.2"
-  }
-}

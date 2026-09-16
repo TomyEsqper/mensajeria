@@ -3,24 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
+    <title>Enviar correo</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="card">
       <p class="eyebrow">Contacto</p>
-      <h1>Escribe un mensaje</h1>
-      <p class="lead">Nombre, correo y lo que quieras contar. Lo enviamos al instante.</p>
+      <h1>Enviar un correo</h1>
+      <p class="lead">Nombre, correo y mensaje. Lo mandamos en un instante.</p>
 
       <form id="formulario" novalidate>
         <label for="nombre">Nombre</label>
-        <input id="nombre" name="nombre" type="text" autocomplete="name" required maxlength="80" />
+        <input
+          id="nombre"
+          name="nombre"
+          type="text"
+          autocomplete="name"
+          required
+          maxlength="80"
+          placeholder="Ana Pérez"
+        />
 
         <label for="correo">Correo</label>
-        <input id="correo" name="correo" type="email" autocomplete="email" required maxlength="120" />
+        <input
+          id="correo"
+          name="correo"
+          type="email"
+          autocomplete="email"
+          required
+          maxlength="120"
+          placeholder="ana@correo.com"
+        />
 
         <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="6" required maxlength="2000"></textarea>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="6"
+          required
+          maxlength="2000"
+          placeholder="Escribe tu mensaje"
+        ></textarea>
 
         <button type="submit" id="enviar">Enviar</button>
         <p id="estado" class="estado" role="status" aria-live="polite"></p>
